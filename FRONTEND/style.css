@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    --principal-color: #2f91ca;
+    --secundario-color: #01b7ff;
+}
+
+header {
+    background-color: var(--principal-color);
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+}
+header a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 1.4rem;
+    color: #470349;
+}
+header a:hover{
+    opacity: 0.7;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--principal-color);
+    padding: 70px;
+    margin-top: 70px;
+    min-width: 350px;
+    border: 1px solid #080000;
+    box-shadow: 0 0 10px rgba(8, 206, 111, 0.1);
+    border-radius: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    margin: auto;
+    font-size: 1.4rem;
+    padding-bottom: 27px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.Name-img{
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.boton{
+    background-color: var(--secundario-color);
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 40px auto 0 auto;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #470349;
+    padding: 17px 50px;
+}
+
+.boton:hover{
+    opacity: 0.8;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    border: 1px solid #001aff;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--secundario-color); 
+    color: #000000; 
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #2356fd; 
+}

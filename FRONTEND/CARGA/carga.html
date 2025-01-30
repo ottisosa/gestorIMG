@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subida de imagenes</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="carga.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="link">Cargar una Imagen</a>
+        <a href="../VISTA/vista.html" class="link">Ver Imagenes</a>
+    </header>
+    <main>
+        <section>
+            <form id="formularioIMG">
+
+                <label class="label">Nombre de la imagen:</label>
+                <input class="Name-img input" type="text" id="nombre" name="nombre" required>
+                
+                <label class="label">Imagen:</label>
+                <label for="file-upload" class="custom-file-upload">
+                  <i class="fas fa-cloud-upload-alt"></i> Elegir archivo
+                </label>
+                <input id="file-upload" class="archivo-img input" type="file" name="imagen" required >
+                <img id="imagen-preview" class="imagen-preview" src="#" alt="Vista previa de la imagen" style="display: none;">
+                
+                <button class="boton" type="submit">Guardar Imagen</button> 
+            
+            </form>
+            <div id="listadoImg" class="listadoImg">
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
